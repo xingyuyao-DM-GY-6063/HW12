@@ -14,8 +14,6 @@ The correct password sequence is as follows:
 - If Button 1 is pressed at **Step 4** instead of Button 2, the password will fail, and the red LED will light up.
 - Any incorrect step in the sequence will reset the process, and the red LED will light up for 2 seconds to indicate failure.
 
----
-
 ## **Circuit Schematic**
 
 Here is the schematic of the circuit, showing all components and connections:
@@ -42,7 +40,6 @@ Here is the schematic of the circuit, showing all components and connections:
   - Anode connected to `D10` through a **220Ω resistor**.
   - Cathode connected to `GND`.
 
----
 
 ### **Schematic Drawing**
 
@@ -70,31 +67,7 @@ Here is a textual representation of the schematic (you can replace this with a h
         [D10]---(RED LED)----220Ω---GND
 ```
 
----
 
-## **Finite State Machine (Optional)**
-
-Below is the state machine representation for the password sequence logic:
-
-1. **State 0 (Start)**:
-   - Wait for Button 1 press → Go to State 1.
-
-2. **State 1**:
-   - Check if potentiometer is turned to the left (analog value < 50).
-   - If true → Go to State 2.
-   - If false → Reset to State 0.
-
-3. **State 2**:
-   - Check if potentiometer is turned to the right (analog value > 950).
-   - If true → Go to State 3.
-   - If false → Reset to State 0.
-
-4. **State 3**:
-   - Wait for Button 2 press.
-   - If Button 2 is pressed → Success (Green LED).
-   - If Button 1 is pressed → Failure (Red LED).
-
----
 
 ## **How to Use**
 1. Connect the circuit as described in the schematic.
@@ -108,6 +81,3 @@ Below is the state machine representation for the password sequence logic:
    - Green LED for success.
    - Red LED for failure.
 
----
-
-Let me know if you'd like a visual schematic or further edits!
