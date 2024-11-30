@@ -20,7 +20,7 @@ Here is the schematic of the circuit, showing all components and connections:
 
 ### **Components and Connections**
 LINK:[Schematic Drawing](https://app.cirkitdesigner.com/project/485fc07d-0ace-4c3e-b583-2e203025ef68)  
-IMAGE:[IMAGE](https://drive.google.com/file/d/1Jayxrtx5quGxuCSnPSu12aYNG8JBSbbl/view?usp=sharing)  
+IMAGE:[HW12circuit](https://drive.google.com/file/d/1Jayxrtx5quGxuCSnPSu12aYNG8JBSbbl/view?usp=sharing)  
 - **Button 1 (D3)**:
   - One pin connected to `D3` on the Arduino.
   - The other pin connected to `5V` with a **10kΩ pull-down resistor** connected to `GND`.
@@ -41,8 +41,6 @@ IMAGE:[IMAGE](https://drive.google.com/file/d/1Jayxrtx5quGxuCSnPSu12aYNG8JBSbbl/
 - **Red LED (D10)**:
   - Anode connected to `D10` through a **220Ω resistor**.
   - Cathode connected to `GND`.
-
-
 
 ## **How to Use**
 1. Connect the circuit as described in the schematic.
