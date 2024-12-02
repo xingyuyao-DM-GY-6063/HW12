@@ -1,9 +1,9 @@
 // Pin Assignments
-const int button1 = 3; // Button 1 connected to D3
-const int button2 = 4; // Button 2 connected to D4
-const int potentiometer = A0; // Potentiometer connected to A0
-const int greenLED = 9; // Green LED for success
-const int redLED = 10; // Red LED for failure
+const int button1 = 3; 
+const int button2 = 4; 
+const int potentiometer = A0; 
+const int greenLED = 9; 
+const int redLED = 10; 
 
 // Variables to track password state
 int step = 0;
@@ -26,15 +26,15 @@ void loop() {
   // Password sequence logic
   if (step == 0 && button1State == HIGH) {
     step = 1; // Step 1: Button 1 pressed
-    delay(300); // Debounce delay
+    delay(300); 
   } 
   else if (step == 1 && potValue < 50) { // Step 2: Potentiometer to the left
     step = 2;
-    delay(300); // Debounce delay
+    delay(300); 
   } 
   else if (step == 2 && potValue > 950) { // Step 3: Potentiometer to the right
     step = 3;
-    delay(300); // Debounce delay
+    delay(300); 
   } 
   else if (step == 3 && button2State == HIGH) { // Step 4: Button 2 pressed
     success = true;
@@ -52,7 +52,7 @@ void loop() {
   Serial.print(" | Potentiometer: ");
   Serial.println(potValue);
 
-  delay(100); // Short delay for stability
+  delay(100); 
 }
 
 // Signal success with green LED

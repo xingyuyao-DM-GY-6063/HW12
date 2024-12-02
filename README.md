@@ -1,7 +1,7 @@
 # HW12
 
 ## **Description**
-This project implements a **physical password machine** using an Arduino Nano, two buttons, a potentiometer, and two LEDs (green for success, red for failure). The device allows users to input a specific password sequence using physical inputs. If the correct sequence is followed, the green LED lights up to indicate success. Otherwise, the red LED lights up to indicate failure.
+This project implements a **physical password machine** using an Arduino Nano, two buttons, a potentiometer, and two LEDs (green for success, red for failure). 
 
 ### **Password Logic**
 The correct password sequence is as follows:
