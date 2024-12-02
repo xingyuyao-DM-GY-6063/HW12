@@ -12,7 +12,6 @@ The correct password sequence is as follows:
 
 ### **Failure Conditions**
 - If Button 1 is pressed at **Step 4** instead of Button 2, the password will fail, and the red LED will light up.
-- Any incorrect step in the sequence will reset the process, and the red LED will light up for 2 seconds to indicate failure.
 
 ## **Circuit Schematic**
 
@@ -42,15 +41,5 @@ IMAGE:[HW12circuit](https://drive.google.com/file/d/1Jayxrtx5quGxuCSnPSu12aYNG8J
   - Anode connected to `D10` through a **220Ω resistor**.
   - Cathode connected to `GND`.
 
-## **How to Use**
-1. Connect the circuit as described in the schematic.
-2. Upload the Arduino sketch to the board.
-3. Follow the correct sequence:
-   - Press Button 1.
-   - Turn the potentiometer all the way to the left.
-   - Turn the potentiometer all the way to the right.
-   - Press Button 2.
-4. Observe the LEDs:
-   - Green LED for success.
-   - Red LED for failure.
+
 
